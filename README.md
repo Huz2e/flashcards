@@ -42,7 +42,7 @@ A React Native application for learning Russian vocabulary using flashcards with
 
 ```sh
 git clone <repository-url>
-cd russian-flashcards
+cd flashcards
 ```
 
 2. Installl dependencies:
