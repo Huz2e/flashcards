@@ -33,7 +33,11 @@ A React Native application for learning Russian vocabulary using flashcards with
 - Expo CLI (`npm install -g expo-cli`)
 
 ## Installation
+- **Android**
+  - You can download android build from [github releases](https://github.com/Huz2e/flashcards/releases)
+  
 
+- **Other methode**
 1. Clone the repository:
 
 ```sh
