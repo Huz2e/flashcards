@@ -1,50 +1,74 @@
-# Welcome to your Expo app 👋
+# Flashcards App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native application for learning Russian vocabulary using flashcards with deck management and practice modes.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Deck Management**
+  - Create and organize flashcards into decks
+  - Filter cards by deck
+  - View all cards across decks
 
-   ```bash
-   npm install
-   ```
+- **Flashcard Creation**
+  - Add Russian-English word pairs
+  - Assign cards to specific decks
+  - Default deck categories (Basics, Advanced)
 
-2. Start the app
+- **Practice Modes**
+  - Timed practice sessions
+  - Self-paced practice
+  - Score tracking
+  - Immediate feedback
+  - Card flipping animations
 
-   ```bash
-    npx expo start
-   ```
+- **Cross-Platform Storage**
+  - SQLite for Android
+  - AsyncStorage for iOS/Web
+  - Persistent card data
 
-In the output, you'll find options to open the app in a
+## Prerequisites
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Node.js (v14 or higher)
+- npm or yarn
+- Expo CLI (`npm install -g expo-cli`)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Installation
 
-## Get a fresh project
+1. Clone the repository:
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+```sh
+git clone <repository-url>
+cd russian-flashcards
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Installl dependencies:
 
-## Learn more
+```sh
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Start the development server:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```sh
+npm start
+```
 
-## Join the community
+## Project Structure
 
-Join our community of developers creating universal apps.
+```
+/
+├── app/                    # Main application screens and routing
+│   ├── screens/           # Screen components
+│   └── index.tsx          # Root component
+├── assets/                # Static assets and styles
+│   ├── images/           # App icons and images
+│   └── styles.tsx        # Global styles
+├── components/           # Reusable components
+├── hooks/               # Custom React hooks
+├── utils/              # Utility functions
+└── package.json        # Project dependencies
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## License
+
+This project is licensed under the GPLv3.0 License - see the LICENSE for details.
